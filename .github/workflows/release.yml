@@ -1,10 +1,11 @@
 name: Release
 
-on:
-  push:
-    tags:
-      - '*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags:
+#       - '*'
+# 
 jobs:
   create_release:
     if: github.ref != 'refs/tags/v1'
